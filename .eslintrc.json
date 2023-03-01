@@ -1,0 +1,97 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "airbnb",
+    "airbnb/hooks",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "prettier",
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "@typescript-eslint/no-empty-interface": "off",
+    "react/jsx-no-useless-fragment": "off",
+    "@typescript-eslint/no-empty-function": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-closing-bracket-location": [2, "line-aligned"],
+    "react/jsx-max-props-per-line": [
+      "error",
+      {
+        "maximum": {
+          "single": 3,
+          "multi": 1
+        }
+      }
+    ],
+    "react-hooks/exhaustive-deps": 0,
+    "react/jsx-props-no-spreading": 0,
+    "react/require-default-props": 0,
+    "react/destructuring-assignment": 0,
+    "react/jsx-filename-extension": [
+      2,
+      {
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx"
+        ]
+      }
+    ],
+    "react/function-component-definition": 0,
+    "react/no-unescaped-entities": 0,
+    "jsx-a11y/anchor-has-content": 0,
+    "jsx-a11y/control-has-associated-label": 0,
+    "jsx-a11y/click-events-have-key-events": 0,
+    "jsx-a11y/no-static-element-interactions": 0,
+    "import/prefer-default-export": 0,
+    "import/no-unresolved": 0,
+    "import/no-named-as-default": 0,
+    "import/extensions": 0,
+    "no-use-before-define": 0,
+    "no-shadow": 0,
+    "no-param-reassign": ["error", { "props": false }],
+    "no-console": 0,
+    "camelcase": 0,
+    "no-underscore-dangle": 0,
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "semi": true,
+        "quotes": true,
+        "indent": 2,
+        "singleAttributePerLine": true
+      }
+    ],
+    "max-len": ["error", { "code": 500 }],
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "ignore"
+      }
+    ],
+    "arrow-parens": ["error", "always"],
+    "eqeqeq": ["error", "always"]
+  }
+}
